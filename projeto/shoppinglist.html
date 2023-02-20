@@ -11,6 +11,10 @@
     
     <div id="container">
       <h2>My Shopping List</h2>
+      <mylist><!--PARA DIRETIVAR PERSONALIZADAS DO ANGULAR TUDO TEM QUE SER MINUSCULO-->
+          <p> OLA DIRETIVA</p>
+      </mylist>
+      
       <ol>
           <li ng-repeat="item in items">
               <input type="checkbox" ng-model="item.checked">
@@ -24,6 +28,11 @@
         <input type="submit" value="Add">
       </form>
     
+      <!-- CONTROLLER SECUNDARIO
+      <ng-controller ng-controller="ngController">
+        <p>Hi {{message}} - {{items[0].name}}</p>
+      </ng-controller>
+      -->
     </div>
   </body>
 </html>
