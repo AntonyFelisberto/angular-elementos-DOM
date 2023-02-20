@@ -1,9 +1,5 @@
 var myApp = angular.module("myShoppingApp",[]);
 
-
-
-
-
 myApp.controller("MainController", function($scope) {
   $scope.items = [
     {name:'Milk', checked:true},
@@ -15,8 +11,7 @@ myApp.controller("MainController", function($scope) {
  
   $scope.addItemToList = function() {
   	if ($scope.newItem.trim() != '') {
-    	$scope.items.push(
-    		{name:$scope.newItem, checked:false});
+    	$scope.items.push({name:$scope.newItem, checked:false});
     	$scope.newItem = '';
     }
   };
